@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PelisPlus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./icono-peliculas.ico">
+</head>
+<body>
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo">PELISPLUS</a>
+            <input type="checkbox" id="menu"/>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">PELICULAS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                    <li><a href="#">REGISTRATE</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn-1">INICIAR SESION</a> 
+        </div>
+
+        <div class="header-content contaniner">
+            <div class="header-1">
+                <img src="images/godzilla_kong_letra.png">
+                <button class="btn-2" onclick="mostrarModal()">Ver Trailer</button>
+            </div>
+        </div>
+
+
+        
+        <div class="nav-container">
+            <button id="prevBtn" class="nav-btn">&lt;</button>
+            <button id="nextBtn" class="nav-btn">&gt;</button>
+        </div>
+
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <!-- El reproductor de YouTube -->
+                <iframe id="youtube-player" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="buscar">
+        <form>
+            <input type="text" id="buscador" class="newb" name="name" placeholder="Buscar" autocomplete="off" />
+            <button type="button" class="newb" onclick="searchProduct()" required>Buscar</button>
+        </form>
+    </div>
+    
+    
+    <p id="showProduct"></p>
+
+    <button id="button2" class="newb">Fecha de Lanzamiento</button> 
+    <button id="button1" class="newb">Top 3</button> 
+    <button id="button3" class="newb">Orden Alfabetico</button> 
+    <div id="contenedor"></div>
+
+
+    <section class="movies container">
+
+        <h2>Estrenos</h2>
+        
+        <div class="box-container-3">
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/1.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/2.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/3.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/4.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/5.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/6.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/7.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/8.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more" id="load-more-3">Más</div>
+
+    </section>
+
+    <section class="movies container">
+
+        
+        
+        <h2>Peliculas Recomendadas</h2>
+    
+
+        <div class="box-container-1">
+
+            <div class="box-1">
+
+                <div class="content">
+                    <img src="images/9.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+
+                <div class="content">
+                    <img src="images/10.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+
+                <div class="content">
+                    <img src="images/11.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+
+                <div class="content">
+                    <img src="images/12.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+
+                <div class="content">
+                    <img src="images/13.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+
+                <div class="content">
+                    <img src="images/14.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+
+                <div class="content">
+                    <img src="images/15.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1">
+
+                <div class="content">
+                    <img src="images/16.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="load-more" id="load-more-1">Más</div>
+
+    </section>
+
+    <section class="movies container">
+
+        <h2>Acción</h2>
+
+        <div class="box-container-2">
+
+            <div class="box-2">
+
+                <div class="content">
+                    <img src="images/1.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+
+                <div class="content">
+                    <img src="images/8.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+
+                <div class="content">
+                    <img src="images/10.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+
+                <div class="content">
+                    <img src="images/7.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+
+                <div class="content">
+                    <img src="images/13.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+
+                <div class="content">
+                    <img src="images/14.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+
+                <div class="content">
+                    <img src="images/15.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-2">
+
+                <div class="content">
+                    <img src="images/16.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more" id="load-more-2">Más</div>
+
+    </section>
+
+    <section class="movies container">
+
+        <h2>Comedia</h2>
+        
+        <div class="box-container-3">
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/9.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/11.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/2.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/3.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/9.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/11.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/2.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-3">
+
+                <div class="content">
+                    <img src="images/3.jpg" alt="">
+                    <h3>Pelicula </h3>
+                    <p>
+                        Descripción de la pelicula
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more" id="load-more-3">Más</div>
+
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
